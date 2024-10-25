@@ -1,0 +1,10 @@
+.pagination_btn {
+    color:#FEAF00 !important;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: #FEAF00 !important;
+    background-color: #FEAF00 !important;
+    border-color: #FEAF00 !important
+}

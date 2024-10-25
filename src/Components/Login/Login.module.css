@@ -1,0 +1,22 @@
+.login_bg {
+  background-image: linear-gradient(to right, #FEAF00, #F8D442);
+}
+.login_bg .login_form {
+  background-color: white;
+  width: 475px;
+  height: 550px;
+  top: 175px;
+  left: 483px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.login_bg .login_form h2 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  text-align: left;
+}/*# sourceMappingURL=Login.module.css.map */
