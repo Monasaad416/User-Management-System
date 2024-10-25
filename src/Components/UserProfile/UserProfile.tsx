@@ -56,7 +56,7 @@ const UserProfile: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="row my-5">
+                  {/* <div className="row my-5">
                     <div className="col-md-6">
                     <div className='pe-4'>
                       <label htmlFor="email" className="text-muted form-label">Email</label>
@@ -72,7 +72,7 @@ const UserProfile: React.FC = () => {
 
                 </div>
                     
-                  </div>
+                  </div> */}
 
                   {/* <div className="row my-5">
                     <div className="col-md-6">

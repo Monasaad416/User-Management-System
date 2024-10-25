@@ -1,5 +1,5 @@
 import React from "react";
-import  styles from "../CustomPagination/CustomPagination.module.scss";
+
 
 interface CustomPaginationProps {
   total: number; // Total number of pages
