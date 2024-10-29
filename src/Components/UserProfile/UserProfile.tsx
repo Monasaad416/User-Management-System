@@ -13,6 +13,7 @@ const UserProfile: React.FC = () => {
   }
 
   const { userData } = authContext;
+  console.log(authContext);
 
   // Check if userData is null
   if (!userData) {
@@ -31,12 +32,16 @@ const UserProfile: React.FC = () => {
 
   return (
   <div>
-      <div className='mx-5'>
-        <h3>User Profile</h3>
+      <div className='mx-md-5 mx-1 vh-100'>
+        <h3 className='my-md-2 my-3 mx-1'>User Profile</h3>
         <hr className='text-muted'/>
         <div className="row">
           <div className="col-12">
-            <div className="mx-3 my-3 bg-white"  style={{borderRadius:'15px'}}>
+            <div className="mx-3 my-3 bg-white position-relative"  style={{borderRadius:'15px'}}>
+              <div className="text-center" style={{position:'absolute',top:"0px",left:"50%",transform: 'translate(-50%, -50%)'}}>
+                <img src={userData.image} alt="profile image"/>
+              </div>
+              
               <div className="">
                 <form className="text-start px-4 py-4">
                   <div className="row my-5">
@@ -56,7 +61,7 @@ const UserProfile: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* <div className="row my-5">
+                  <div className="row my-5">
                     <div className="col-md-6">
                     <div className='pe-4'>
                       <label htmlFor="email" className="text-muted form-label">Email</label>
@@ -72,8 +77,7 @@ const UserProfile: React.FC = () => {
 
                 </div>
                     
-                  </div> */}
-
+                  </div> 
                   {/* <div className="row my-5">
                     <div className="col-md-6">
                       <div className='pe-4'>
@@ -90,8 +94,8 @@ const UserProfile: React.FC = () => {
 
                   </div>
                     
-                  </div>
- */}
+                  </div> */}
+
 
                 </form>
               </div>

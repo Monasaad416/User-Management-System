@@ -114,19 +114,19 @@ const AddUser: React.FC<UserFormProps> = ({ user }) => {
 
   return (
   <div>
-      <div className='mx-5'>
-        <h3>{userId ? 'Edit': 'Add'} User</h3>
+      <div className='mx-md-5 mx-1'>
+        <h3 className='my-md-1 my-3 mx-1' >{userId ? 'Edit': 'Add'} User</h3>
         <hr className='text-muted'/>
         <div className="row">
           <div className="col-12">
-            <div className="mx-3 my-3 bg-white"  style={{borderRadius:'15px'}}>
+            <div className="mx-3 my-md-3  bg-white"  style={{borderRadius:'15px'}}>
               <div className="">
                 <form className="text-start px-4 py-4" onSubmit={handleSubmit(submit)}>
-                  <div className="row my-5">
+                  <div className="row my-md-5">
                     <div className="col-md-6">
                       <div className='pe-4'>
                         <label htmlFor="firstName" className="text-muted form-label">First Name</label>
-                        <input type="text" className="form-control inputStyle" placeholder='Enter your first name'
+                        <input type="text" className="form-control inputStyle " placeholder='Enter your first name'
                         {...register("firstName",{required:"firstName is required"})} />
                         {errors.firstName && <span className="text-danger">{errors.firstName.message}</span>}
                       </div>
@@ -135,7 +135,7 @@ const AddUser: React.FC<UserFormProps> = ({ user }) => {
                     <div className="col-md-6">
                     <div className='pe-4'>
                       <label htmlFor="lastName" className="text-muted form-label">Last Name</label>
-                      <input type="text" className="form-control inputStyle" placeholder='Enter your Last name'
+                      <input type="text" className="form-control inputStyle " placeholder='Enter your Last name'
                     {...register("lastName",{required:"lastName is required"})}/>
                     {errors.lastName && <span className="text-danger">{errors.lastName.message}</span>}
                     </div>
@@ -143,11 +143,11 @@ const AddUser: React.FC<UserFormProps> = ({ user }) => {
                     </div>
                   </div>
 
-                  <div className="row my-5">
+                  <div className="row my-md-5">
                     <div className="col-md-6">
                     <div className='pe-4'>
                       <label htmlFor="email" className="text-muted form-label">Email</label>
-                      <input type="email" className="form-control inputStyle" placeholder='Enter your email'
+                      <input type="email" className="form-control inputStyle " placeholder='Enter your email'
                       {...register("email",{required:"email is required" , pattern:{
                         value:/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,message:"please enter a valid email address"
                       }})}/>
@@ -158,7 +158,7 @@ const AddUser: React.FC<UserFormProps> = ({ user }) => {
                     <div className="col-md-6">
                     <div className='pe-4'>
                       <label htmlFor="age" className="text-muted form-label">Age</label>
-                      <input type="text" className="form-control inputStyle" placeholder='Enter your age'
+                      <input type="text" className="form-control inputStyle " placeholder='Enter your age'
                       {...register("age",{required:"age is required" ,
                         max:{value:200,message:"Age must be less than 200"},
                         min:{value:0,message:"Age must be greater than 0"
@@ -171,11 +171,11 @@ const AddUser: React.FC<UserFormProps> = ({ user }) => {
                     
                   </div>
 
-                  <div className="row my-5">
+                  <div className="row my-md-5">
                     <div className="col-md-6">
                       <div className='pe-4'>
                         <label htmlFor="phone" className="text-muted form-label">Phone</label>
-                        <input type="text" className="form-control inputStyle" placeholder='Enter your phone'
+                        <input type="text" className="form-control inputStyle " placeholder='Enter your phone'
                         {...register("phone",{required:"phone is required"})}/>
                         {errors.phone && <span className="text-danger">{errors.phone.message}</span>}
                       </div>
@@ -184,7 +184,7 @@ const AddUser: React.FC<UserFormProps> = ({ user }) => {
                     <div className="col-md-6">
                       <div className='pe-4'>
                         <label htmlFor="birthDate" className="text-muted form-label">Birth Date</label>
-                        <input type="date" className="form-control inputStyle" placeholder='Enter your date of birth'
+                        <input type="date" className="form-control inputStyle " placeholder='Enter your date of birth'
                         {...register("birthDate",{required:"birthdate is required"})}/>
                         {errors.birthDate && <span className="text-danger">{errors.birthDate.message}</span>}
                     </div>
@@ -194,7 +194,7 @@ const AddUser: React.FC<UserFormProps> = ({ user }) => {
                   </div>
 
 
-                  <div className="d-grid gap-2 col-6 mx-auto">
+                  <div className="d-grid gap-2 col-6 mx-auto mt-md-1 mt-4">
                     <button className="btn btn-warning text-white" type="submit">{userId ? 'Edit': 'Create'} User</button>
                   </div>
                 </form>

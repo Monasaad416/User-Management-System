@@ -104,9 +104,9 @@ const [loading,setLoading] = useState(true);
   return (
     <>
     {loading ? <PreLoader/> : 
-    <div className='row mx-5 px-5 '>
-      <div className="d-flex justify-content-between my-5">
-        <h3>Users List</h3>
+    <div className='row mx-md-5 px-md-5 mx-1 px-1 overflow-x-auto'>
+      <div className="d-flex justify-content-between my-md-5 my-3">
+        <h3 className='my-md-1 my-3 mx-1' >Users List</h3>
         <button className="btn btn-warning px-5 text-white" onClick={navigateToAddNewUser}>Add New User</button>
       </div>
       <hr className='text-muted'/>
@@ -139,7 +139,7 @@ const [loading,setLoading] = useState(true);
                   <Link to={`/dashboard/users/update-user/${userInfo.id}`}>
                     <MdModeEdit size={25} title="Edit User" className="text-warning mx-2"/>
                   </Link>
-                  <MdDelete size={25} title="Delete User" onClick={()=>handleShowDelete(userInfo.id)} className="text-warning mx-2"/>
+                  <MdDelete size={25} title="Delete User" onClick={()=>handleShowDelete(userInfo.id)} className="text-danger mx-2"/>
                 </td>
               </tr>
             ))}

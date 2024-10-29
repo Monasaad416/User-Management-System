@@ -19,4 +19,9 @@
   font-weight: 700;
   line-height: 29.26px;
   text-align: left;
+}
+@media (max-width: 575.98px) {
+  .login_bg .login_form {
+    width: 330px;
+  }
 }/*# sourceMappingURL=Login.module.css.map */

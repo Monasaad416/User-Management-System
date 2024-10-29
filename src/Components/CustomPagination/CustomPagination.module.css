@@ -2,9 +2,13 @@
   color: #FEAF00 !important;
 }
 
-.active > .page-link, .page-link.active {
+.active > .page_link {
   z-index: 3;
-  color: #FEAF00 !important;
+  color: #fff !important;
   background-color: #FEAF00 !important;
   border-color: #FEAF00 !important;
+}
+
+.page_item, .page_link {
+  color: #FEAF00 !important;
 }/*# sourceMappingURL=CustomPagination.module.css.map */

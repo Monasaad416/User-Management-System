@@ -12,13 +12,14 @@
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
         h2{
-
-
             font-family: Montserrat;
             font-size: 24px;
             font-weight: 700;
             line-height: 29.26px;
             text-align: left;
+        }
+        @media (max-width: 575.98px) {
+                width: 330px;
         }
 
     }

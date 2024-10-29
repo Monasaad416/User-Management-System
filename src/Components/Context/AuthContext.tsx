@@ -6,6 +6,9 @@ interface DecodedToken {
    firstName: string;
    lastName: string;
    image: string;
+   email: string;
+   gender: string;
+
 }
 
 // Define the context type

@@ -1,1 +1,1 @@
-{"version":3,"sources":["CustomPagination.module.scss","CustomPagination.module.css"],"names":[],"mappings":"AAAA;EACI,yBAAA;ACCJ;;ADEA;EACI,UAAA;EACA,yBAAA;EACA,oCAAA;EACA,gCAAA;ACCJ","file":"CustomPagination.module.css"}
+{"version":3,"sources":["CustomPagination.module.scss","CustomPagination.module.css"],"names":[],"mappings":"AAAA;EACI,yBAAA;ACCJ;;ADEA;EACI,UAAA;EACA,sBAAA;EACA,oCAAA;EACA,gCAAA;ACCJ;;ADEA;EACI,yBAAA;ACCJ","file":"CustomPagination.module.css"}

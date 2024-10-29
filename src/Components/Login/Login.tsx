@@ -57,15 +57,15 @@ export default function Login() {
     
 
   return (
-    <div className={`vh-100 w-100 d-flex justify-content-center align-items-center ${styles.login_bg}`}>
+    <div className={`vh-100 d-flex justify-content-center align-items-center ${styles.login_bg}`}>
         <div className={`d-flex justify-content-center align-items-start ${styles.login_form}`}>
             <div className='text-center'>
                 <div className="d-flex">
                     <div className="mt-5 mx-2" style={{ width:'5px',height:'30px',backgroundColor:"#F8D442" }}></div>
-                    <h2 className='mt-5'>User Management System</h2>
+                    <h2 className='mt-5 fs-md-2 fs-5'>User Management System</h2>
                 </div>
                 
-                <p className="text-uppercase mt-5 mb-1 fs-5 fw-bold">sign in</p>
+                <p className="text-uppercase mt-md-5 mt-2 mb-1 fs-5 fw-bold">sign in</p>
                 <small className="text-muted">Enter your credentials to access your account</small>
                 <form className='mt-5 py-3' onSubmit={handleSubmit(submit)}>
                     <div className="mb-3 mx- text-start mx-0">
